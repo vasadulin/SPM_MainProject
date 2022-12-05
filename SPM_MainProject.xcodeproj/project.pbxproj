@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA373EC6293ACA42006A90DA /* MyUILibraty in Frameworks */ = {isa = PBXBuildFile; productRef = CA373EC5293ACA42006A90DA /* MyUILibraty */; };
 		CA7ED307293A6D6200E0E89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7ED306293A6D6200E0E89F /* AppDelegate.swift */; };
 		CA7ED309293A6D6200E0E89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7ED308293A6D6200E0E89F /* SceneDelegate.swift */; };
 		CA7ED30B293A6D6200E0E89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7ED30A293A6D6200E0E89F /* ViewController.swift */; };
 		CA7ED30E293A6D6200E0E89F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7ED30C293A6D6200E0E89F /* Main.storyboard */; };
 		CA7ED310293A6D6300E0E89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7ED30F293A6D6300E0E89F /* Assets.xcassets */; };
 		CA7ED313293A6D6300E0E89F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7ED311293A6D6300E0E89F /* LaunchScreen.storyboard */; };
+		CA7ED31D293A8F9600E0E89F /* CommonLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CA7ED31C293A8F9600E0E89F /* CommonLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA373EC6293ACA42006A90DA /* MyUILibraty in Frameworks */,
+				CA7ED31D293A8F9600E0E89F /* CommonLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 		CA7ED305293A6D6200E0E89F /* SPM_MainProject */ = {
 			isa = PBXGroup;
 			children = (
+				CA7ED31A293A6EB100E0E89F /* Frameworks */,
 				CA7ED306293A6D6200E0E89F /* AppDelegate.swift */,
 				CA7ED308293A6D6200E0E89F /* SceneDelegate.swift */,
 				CA7ED30A293A6D6200E0E89F /* ViewController.swift */,
@@ -65,6 +70,13 @@
 				CA7ED314293A6D6300E0E89F /* Info.plist */,
 			);
 			path = SPM_MainProject;
+			sourceTree = "<group>";
+		};
+		CA7ED31A293A6EB100E0E89F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +95,10 @@
 			dependencies = (
 			);
 			name = SPM_MainProject;
+			packageProductDependencies = (
+				CA7ED31C293A8F9600E0E89F /* CommonLibrary */,
+				CA373EC5293ACA42006A90DA /* MyUILibraty */,
+			);
 			productName = SPM_MainProject;
 			productReference = CA7ED303293A6D6200E0E89F /* SPM_MainProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,10 @@
 				Base,
 			);
 			mainGroup = CA7ED2FA293A6D6200E0E89F;
+			packageReferences = (
+				CA7ED31B293A8F9600E0E89F /* XCRemoteSwiftPackageReference "CommonLibrary" */,
+				CA373EC4293ACA42006A90DA /* XCRemoteSwiftPackageReference "MyUILibraty" */,
+			);
 			productRefGroup = CA7ED304293A6D6200E0E89F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,6 +314,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +342,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +378,39 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA373EC4293ACA42006A90DA /* XCRemoteSwiftPackageReference "MyUILibraty" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vasadulin/MyUILibraty.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 2.0.0;
+				minimumVersion = 1.0.1;
+			};
+		};
+		CA7ED31B293A8F9600E0E89F /* XCRemoteSwiftPackageReference "CommonLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vasadulin/CommonLibrary.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA373EC5293ACA42006A90DA /* MyUILibraty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA373EC4293ACA42006A90DA /* XCRemoteSwiftPackageReference "MyUILibraty" */;
+			productName = MyUILibraty;
+		};
+		CA7ED31C293A8F9600E0E89F /* CommonLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA7ED31B293A8F9600E0E89F /* XCRemoteSwiftPackageReference "CommonLibrary" */;
+			productName = CommonLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA7ED2FB293A6D6200E0E89F /* Project object */;
 }
