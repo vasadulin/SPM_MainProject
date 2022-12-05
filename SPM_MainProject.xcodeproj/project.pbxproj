@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA57E2ED293E8F6000A05A68 /* MyLocalUILibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyLocalUILibrary; path = ../MyLocalUILibrary; sourceTree = "<group>"; };
 		CA7ED303293A6D6200E0E89F /* SPM_MainProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPM_MainProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7ED306293A6D6200E0E89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7ED308293A6D6200E0E89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,10 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA57E2E9293E85C700A05A68 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				CA57E2ED293E8F6000A05A68 /* MyLocalUILibrary */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		CA7ED2FA293A6D6200E0E89F = {
 			isa = PBXGroup;
 			children = (
 				CA7ED305293A6D6200E0E89F /* SPM_MainProject */,
+				CA57E2E9293E85C700A05A68 /* Packages */,
 				CA7ED304293A6D6200E0E89F /* Products */,
 			);
 			sourceTree = "<group>";

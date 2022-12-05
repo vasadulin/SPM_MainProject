@@ -25,9 +25,8 @@
                                     <action selector="openButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5g-B9-ZuN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0s-57-iMG">
-                                <rect key="frame" x="18" y="339" width="359" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0s-57-iMG">
+                                <rect key="frame" x="17" y="333.66666666666669" width="359" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Open ViewController from MyLocalUILibrary"/>
                                 <connections>
@@ -39,6 +38,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZbQ-fl-Rbs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0DC-LY-3Sk"/>
+                            <constraint firstItem="ZbQ-fl-Rbs" firstAttribute="top" secondItem="o0s-57-iMG" secondAttribute="bottom" constant="40" id="44o-Rs-7Z7"/>
+                            <constraint firstItem="o0s-57-iMG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RcB-k2-G2N"/>
                             <constraint firstItem="ZbQ-fl-Rbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sNW-2p-h8V"/>
                         </constraints>
                     </view>
