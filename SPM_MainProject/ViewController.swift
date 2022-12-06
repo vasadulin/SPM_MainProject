@@ -8,7 +8,7 @@
 import UIKit
 import CommonLibrary
 import MyUILibraty
-//import MyLocalUILibrary
+import MyLocalUILibrary
 
 class ViewController: UIViewController {
 
@@ -28,8 +28,8 @@ class ViewController: UIViewController {
   
   @IBAction func openLocalButtonAction(_ sender: Any) {
     //Open ViewController from LOCAL library MyUILibrary
-//    let vc = LocalViewController.viewControllerFromStoryboard
-//    self.present(vc, animated: true, completion: nil)
+    let vc = LocalViewController.viewControllerFromStoryboard
+    self.present(vc, animated: true, completion: nil)
   }
 }
 

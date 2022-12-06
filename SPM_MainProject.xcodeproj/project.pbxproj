@@ -15,6 +15,7 @@
 		CA7ED310293A6D6300E0E89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7ED30F293A6D6300E0E89F /* Assets.xcassets */; };
 		CA7ED313293A6D6300E0E89F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7ED311293A6D6300E0E89F /* LaunchScreen.storyboard */; };
 		CA7ED31D293A8F9600E0E89F /* CommonLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CA7ED31C293A8F9600E0E89F /* CommonLibrary */; };
+		CAC7D021293F55E800F733C5 /* MyLocalUILibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CAC7D020293F55E800F733C5 /* MyLocalUILibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA373EC6293ACA42006A90DA /* MyUILibraty in Frameworks */,
+				CAC7D021293F55E800F733C5 /* MyLocalUILibrary in Frameworks */,
 				CA7ED31D293A8F9600E0E89F /* CommonLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +58,7 @@
 				CA7ED305293A6D6200E0E89F /* SPM_MainProject */,
 				CA57E2E9293E85C700A05A68 /* Packages */,
 				CA7ED304293A6D6200E0E89F /* Products */,
+				CAC7D01F293F55E800F733C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +92,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CAC7D01F293F55E800F733C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +118,7 @@
 			packageProductDependencies = (
 				CA7ED31C293A8F9600E0E89F /* CommonLibrary */,
 				CA373EC5293ACA42006A90DA /* MyUILibraty */,
+				CAC7D020293F55E800F733C5 /* MyLocalUILibrary */,
 			);
 			productName = SPM_MainProject;
 			productReference = CA7ED303293A6D6200E0E89F /* SPM_MainProject.app */;
@@ -419,6 +430,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA7ED31B293A8F9600E0E89F /* XCRemoteSwiftPackageReference "CommonLibrary" */;
 			productName = CommonLibrary;
+		};
+		CAC7D020293F55E800F733C5 /* MyLocalUILibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLocalUILibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
